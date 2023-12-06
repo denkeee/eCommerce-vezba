@@ -403,3 +403,171 @@ footer{
     }
 }
 
+#all-products{
+    min-height: 50vh;
+}
+
+.all-products__row {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  
+  .products__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .products__header__link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .products__header__link__text {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .products__header__title {
+    font-size: 28px;
+    text-transform: uppercase;
+  }
+  
+  .products__header__filter {
+    padding: 4px;
+    background-color: #f4f4f4;
+    font-size: 15px;
+    font-weight: 500;
+    color: #292929;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+
+  .products__list__spinner{
+    font-size: 40px;
+    margin: 0 auto;
+    animation: loading 1000ms infinite;
+  }
+
+  @keyframes loading{
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+  }
+  
+  /* LG Screens - Laptops*/
+  
+  @media (max-width: 1024px) {
+    /* Products */
+  
+    .product__details__title {
+      font-size: 16px;
+    }
+  
+    /* Banner */
+  
+    .banner__text {
+      padding: 0 80px;
+    }
+  }
+  
+  /* MD Screens - Tablets */
+  
+  @media (max-width: 768px) {
+    /* Products */
+  
+    .product {
+      width: 31%;
+    }
+  
+    /* Banner */
+  
+    .banner__text {
+      width: 100%;
+    }
+  
+    .banner__img {
+      display: none;
+    }
+  }
+  
+  /* SM Screens */
+  
+  @media (max-width: 640px) {
+    /* Navigation */
+  
+    .nav__menu {
+      display: block;
+    }
+  
+    .nav__links {
+      display: none;
+    }
+  
+    /* Header */
+  
+    .header__title {
+      text-align: center;
+    }
+  
+    .header__grid__title {
+      font-size: 24px;
+      left: 12px;
+    }
+  
+    /* Products */
+  
+    .product {
+      width: 48%;
+    }
+  
+    /* Banner */
+  
+    .banner__text {
+      padding: 0 40px;
+    }
+  }
+  
+  /* Mobile Devices */
+  
+  @media (max-width: 480px) {
+    /* Header */
+  
+    .header__grid__title {
+      left: 4px;
+      bottom: 4px;
+    }
+  
+    /* Products */
+  
+    .product {
+      width: 100%;
+    }
+  
+    /* Newsletter */
+  
+    .newsletter__form {
+      flex-direction: column;
+    }
+  
+    .newsletter__form__input {
+      text-align: center;
+    }
+  
+    /* 
+    
+    PRODUCTS PAGE
+    
+    */
+  
+    .products__header {
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
